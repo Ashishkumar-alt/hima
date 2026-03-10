@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Bhoomi Himachal | Temple Detail</title>
+  <meta
+    name="description"
+    content="View temple history, timing, best season, location map, and nearby hotels for Himachal temple visits."
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <header class="hero hero-small">
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="temples.html">Temple Listing</a>
+      </nav>
+      <p class="badge">Dev Bhoomi Himachal</p>
+      <h1>Temple Details</h1>
+      <p class="hero-text">History, timings, best season, maps, and nearby hotels.</p>
+    </header>
+
+    <main class="container">
+      <section class="panel detail-panel" id="temple-detail" aria-labelledby="detail-title">
+        <h2 id="detail-title">Temple Information</h2>
+        <div id="detailEmpty" class="detail-empty">Temple not found. Return to listing and select a valid temple.</div>
+        <article id="detailContent" class="detail-content hidden">
+          <a class="text-link" href="temples.html">Back to Temple Listing</a>
+          <h3 id="detailName"></h3>
+          <p id="detailLocation"></p>
+          <p id="detailTiming"></p>
+          <p id="detailBestTime"></p>
+          <p id="detailHistory"></p>
+          <p id="detailUpdated" class="detail-meta"></p>
+          <p class="detail-meta">Note: Temple timings may change during festivals and special events.</p>
+          <div id="detailGallery" class="gallery"></div>
+          <div class="detail-actions">
+            <a id="detailMap" class="link-btn" href="#" target="_blank" rel="noopener noreferrer">Open Google Map</a>
+          </div>
+          <h4>Nearby Hotels</h4>
+          <ul id="hotelList" class="hotel-list"></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright 2026 Dev Bhoomi Himachal | Temple Detail</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

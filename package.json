@@ -1,0 +1,25 @@
+{
+  "name": "dev-bhoomi-himachal",
+  "version": "1.0.0",
+  "description": "Temple visit planner for Himachal Pradesh",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required - static site'",
+    "lint": "echo 'No linting configured'",
+    "test": "echo 'No tests configured'",
+    "validate": "node validate.js",
+    "audit": "echo 'Run manual testing checklist'",
+    "deploy-check": "echo 'Test GitHub Pages deployment locally'"
+  },
+  "keywords": ["himachal", "temples", "travel", "pilgrimage"],
+  "author": "Dev Bhoomi Himachal",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "homepage": "http://localhost:8000"
+}

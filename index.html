@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Bhoomi Himachal | Home</title>
+  <meta
+    name="description"
+    content="Trusted platform to plan temple visits in Himachal Pradesh with weather, temple listing, and detailed pilgrimage information."
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <header class="hero">
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="temples.html">Temple Listing</a>
+      </nav>
+      <p class="badge">Dev Bhoomi Himachal</p>
+      <h1>Plan Your Himachal Temple Visit</h1>
+      <p class="hero-text">
+        Temple timings, weather checks, map links, and nearby stay support in one trusted platform.
+      </p>
+      <div class="hero-actions">
+        <a class="cta" href="temples.html">View Top Temples</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel weather-panel" aria-labelledby="weather-title">
+        <h2 id="weather-title">Check Weather</h2>
+        <p class="subtext">Get current temperature and condition before your yatra.</p>
+        <div class="weather-controls">
+          <input id="city" type="text" placeholder="Enter city (example: Dharamshala)" autocomplete="off">
+          <button id="weatherBtn" type="button">Check Weather</button>
+        </div>
+        <p id="weatherResult" class="weather-result" aria-live="polite"></p>
+      </section>
+
+      <section class="panel">
+        <h2>MVP Scope</h2>
+        <ul class="simple-list">
+          <li>Featured temple listing (Top 10)</li>
+          <li>Dedicated temple detail pages</li>
+          <li>Nearby hotel contacts with call button</li>
+          <li>Real-time weather by city</li>
+        </ul>
+      </section>
+
+      <section class="panel listing-panel" aria-labelledby="featured-title">
+        <div class="listing-head">
+          <h2 id="featured-title">Featured Temples</h2>
+          <a class="text-link" href="temples.html">View All</a>
+        </div>
+        <div id="homeTempleGrid" class="temples"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright 2026 Dev Bhoomi Himachal | MVP v1.0</p>
+      <p class="footer-note">Language support: English live, Hindi in Phase 2.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
